@@ -35,6 +35,10 @@
   align-items: center;
 }
 
+.footer a:hover {
+  animation: color-shift 1s alternate infinite;
+}
+
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -114,9 +118,24 @@
   height: 1em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@keyframes color-shift {
+  0% {
+    color: rgb(2, 2, 163);
+  }
+  33% {
+    color: rgb(3, 148, 3);
+  }
+  66% {
+    color: rgb(175, 175, 2);
+  }
+  100% {
+    color: rgb(173, 1, 1);
   }
 }

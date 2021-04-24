@@ -1,0 +1,29 @@
+.social {
+  margin-left: 5%;
+  display: flex;
+}
+
+.social i {
+  padding-right: 10px;/*space before the red outline*/
+  margin-right: 10px;/*also between the red and blue*/
+  /* outline: 1px solid red; */
+}
+
+.social i:hover {
+  animation: color-shift 1s alternate infinite;
+}
+
+@keyframes color-shift {
+  0% {
+    color: rgb(2, 2, 163);
+  }
+  33% {
+    color: rgb(3, 148, 3);
+  }
+  66% {
+    color: rgb(175, 175, 2);
+  }
+  100% {
+    color: rgb(173, 1, 1);
+  }
+}

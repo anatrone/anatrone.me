@@ -1,65 +1,55 @@
-import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Head from '../components/Head';
+import Nav from '../components/Nav';
+import Typewriter from 'typewriter-effect';
+import SocialMedia from '../components/SocialMedia';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
+    <>
+    <Head title="gabriel anatrone" />
+    <Nav />
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          <Typewriter
+              options={{
+                  strings: [
+                    'Gabriel Anatrone', 
+                    'Anatrone',
+                    'Ana',
+                    'Gabs',
+                    'ガブリエル'
+                  ],
+                  autoStart: true,
+                  loop: true,
+              }}
+          />
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <div className={styles.description}>
+           <p>web developer full-stack php/js</p>
+           
+           <SocialMedia />
+        </div>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="/playground" className={styles.card}>
+            <h3>&larr; Playground</h3>
+            <p>Place where I put anything random.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="/projects" className={styles.card}>
+            <h3 className="text-end">Projects &rarr;</h3>
+            <p className="text-end">Place where I have my projects or what I have already coded.</p>
           </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      <Footer />
     </div>
+  </>
   )
 }
