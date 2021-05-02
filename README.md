@@ -8,7 +8,7 @@
 [![support for me](https://img.shields.io/badge/support%20for%20me%20on-paypal-brightgreen)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=4Q8ABHX2ZVV46&currency_code=USD&source=url)
 
 <br>
-This website use next.js and vercel for deploy.
+This website use next.js and vercel for deploy. Link in about.
 <br>
 <br>
 
