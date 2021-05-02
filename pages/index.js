@@ -16,7 +16,7 @@ export default function Home() {
           <Typewriter
               options={{
                   strings: [
-                    'Gabriel Anatrone', 
+                    'Gabriel Anatrone',
                     'Anatrone',
                     'Ana',
                     'Gabs',
@@ -35,12 +35,12 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a href="/playground" className={styles.card}>
+          <a href="#" className={styles.card}>
             <h3>&larr; Playground</h3>
-            <p>Place where I put anything random.</p>
+            <p>Code laboratory. Where I put anything random.</p>
           </a>
 
-          <a href="/projects" className={styles.card}>
+          <a href="#" className={styles.card}>
             <h3 className="text-end">Projects &rarr;</h3>
             <p className="text-end">Place where I have my projects or what I have already coded.</p>
           </a>

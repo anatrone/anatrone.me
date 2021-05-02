@@ -13,8 +13,7 @@ const ThemeToggle = dynamic(() => import("./ThemeToggle"), {
   ssr: false,
 });
 
-
-export default function Nav() {
+export default function Nav({ page }) {
     return (
       <>
         <nav className="navbar justify-content-end fixed-top">
